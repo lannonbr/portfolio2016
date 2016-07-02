@@ -20,6 +20,7 @@ header {
   }
   header h1 {
     flex-grow: 0;
+    font-size: 1.75em;
   }
 }
 
@@ -34,6 +35,12 @@ header h1 {
 
 header nav {
   float: right;
+}
+
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
 }
 
 header nav ul {
@@ -61,4 +68,78 @@ main {
   clear: both;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.btn-navdrawer {
+  background: 0;
+  outline: 0;
+  border: 0;
+  display: none;
+  align-items: center;
+  padding-left: 16px;
+}
+
+@media (max-width: 700px) {
+  .btn-navdrawer {
+    display: flex;
+  }
+}
+
+.navdrawer-open-shadow {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  display: none;
+  opacity: 0;
+}
+
+.navdrawer {
+  color: #404040;
+  display: none;
+  z-index: 5;
+  position: fixed;
+  left: -320px;
+  top: 0;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.navdrawer .navdrawer-content {
+  height: 100vh;
+  background-color: white;
+  width: 300px;
+}
+
+.navdrawer .navdrawer-content h1 {
+  font-size: 1.5em;
+  margin: 0;
+  height: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.navdrawer .navdrawer-content ul {
+  padding: 0;
+}
+
+.navdrawer .navdrawer-content ul .nav-link {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #404040;
+  padding-left: 16px;
+}
+
+footer {
+  background-color: #ccc;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
