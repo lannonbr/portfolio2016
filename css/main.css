@@ -149,6 +149,7 @@ main {
   padding-bottom: 20px;
   height: auto;
   float: left;
+  width: 100%;
 }
 
 .project img {
