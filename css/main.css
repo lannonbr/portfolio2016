@@ -136,6 +136,61 @@ main {
   padding-left: 16px;
 }
 
+#contact {
+  clear: left;
+}
+
+.fa {
+  padding-right: 5px;
+}
+
+.project {
+  clear: both;
+  padding-bottom: 20px;
+  height: auto;
+  float: left;
+}
+
+.project img {
+  overflow: hidden;
+  display: block;
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+  margin-bottom: 1em;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .project img {
+    width: 100%;
+  }
+}
+
+.project .visitlink {
+  display: block;
+  width: 120px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #673ab7;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .project .visitlink {
+    width: 100%;
+  }
+}
+
+.project .visitlink:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+}
+
 footer {
   background-color: #ccc;
   height: 3em;
